@@ -1,0 +1,30 @@
+﻿  Dialog.cpp
+C:\Users\3-3-3\source\repos\Л.Р 25 (8к)\Л.Р 25 (8к)\Dialog.h(14): error C2061: синтаксическая ошибка: идентификатор "TEvent"
+C:\Users\3-3-3\source\repos\Л.Р 25 (8к)\Л.Р 25 (8к)\Dialog.h(16): error C2061: синтаксическая ошибка: идентификатор "TEvent"
+C:\Users\3-3-3\source\repos\Л.Р 25 (8к)\Л.Р 25 (8к)\Dialog.h(17): error C2061: синтаксическая ошибка: идентификатор "TEvent"
+C:\Users\3-3-3\source\repos\Л.Р 25 (8к)\Л.Р 25 (8к)\Dialog.cpp(15): error C2065: TEvent: необъявленный идентификатор
+C:\Users\3-3-3\source\repos\Л.Р 25 (8к)\Л.Р 25 (8к)\Dialog.cpp(15): error C2065: event: необъявленный идентификатор
+C:\Users\3-3-3\source\repos\Л.Р 25 (8к)\Л.Р 25 (8к)\Dialog.cpp(15): error C2761: "void Dialog::GetEvent(void)": повторное объявление члена запрещено.
+C:\Users\3-3-3\source\repos\Л.Р 25 (8к)\Л.Р 25 (8к)\Dialog.cpp(16): error C2448: Dialog::GetEvent: вероятно, инициализатор, использующий стиль функции, является определением функции
+C:\Users\3-3-3\source\repos\Л.Р 25 (8к)\Л.Р 25 (8к)\Dialog.cpp(48): error C2065: TEvent: необъявленный идентификатор
+C:\Users\3-3-3\source\repos\Л.Р 25 (8к)\Л.Р 25 (8к)\Dialog.cpp(48): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "event"
+C:\Users\3-3-3\source\repos\Л.Р 25 (8к)\Л.Р 25 (8к)\Dialog.cpp(48): error C2065: event: необъявленный идентификатор
+C:\Users\3-3-3\source\repos\Л.Р 25 (8к)\Л.Р 25 (8к)\Dialog.cpp(52): error C2065: event: необъявленный идентификатор
+C:\Users\3-3-3\source\repos\Л.Р 25 (8к)\Л.Р 25 (8к)\Dialog.cpp(53): error C2065: event: необъявленный идентификатор
+C:\Users\3-3-3\source\repos\Л.Р 25 (8к)\Л.Р 25 (8к)\Dialog.cpp(67): error C2065: TEvent: необъявленный идентификатор
+C:\Users\3-3-3\source\repos\Л.Р 25 (8к)\Л.Р 25 (8к)\Dialog.cpp(67): error C2065: event: необъявленный идентификатор
+C:\Users\3-3-3\source\repos\Л.Р 25 (8к)\Л.Р 25 (8к)\Dialog.cpp(67): error C2761: "void Dialog::ClearEvent(void)": повторное объявление члена запрещено.
+C:\Users\3-3-3\source\repos\Л.Р 25 (8к)\Л.Р 25 (8к)\Dialog.cpp(68): error C2448: Dialog::ClearEvent: вероятно, инициализатор, использующий стиль функции, является определением функции
+C:\Users\3-3-3\source\repos\Л.Р 25 (8к)\Л.Р 25 (8к)\Dialog.cpp(78): error C2065: TEvent: необъявленный идентификатор
+C:\Users\3-3-3\source\repos\Л.Р 25 (8к)\Л.Р 25 (8к)\Dialog.cpp(78): error C2065: event: необъявленный идентификатор
+C:\Users\3-3-3\source\repos\Л.Р 25 (8к)\Л.Р 25 (8к)\Dialog.cpp(78): error C2761: "void Dialog::HandleEvent(void)": повторное объявление члена запрещено.
+C:\Users\3-3-3\source\repos\Л.Р 25 (8к)\Л.Р 25 (8к)\Dialog.cpp(79): error C2448: Dialog::HandleEvent: вероятно, инициализатор, использующий стиль функции, является определением функции
+  test8.cpp
+C:\Users\3-3-3\source\repos\Л.Р 25 (8к)\Л.Р 25 (8к)\Dialog.h(14): error C2061: синтаксическая ошибка: идентификатор "TEvent"
+C:\Users\3-3-3\source\repos\Л.Р 25 (8к)\Л.Р 25 (8к)\Dialog.h(16): error C2061: синтаксическая ошибка: идентификатор "TEvent"
+C:\Users\3-3-3\source\repos\Л.Р 25 (8к)\Л.Р 25 (8к)\Dialog.h(17): error C2061: синтаксическая ошибка: идентификатор "TEvent"
+  Student.cpp
+  Person.cpp
+  List.cpp
+  Object.cpp
+  Создание кода...
