@@ -1,0 +1,4 @@
+﻿  Л.Р 22 (3.к).cpp
+C:\Users\3-3-3\source\repos\Л.Р 22 (3.к)\Л.Р 22 (3.к)\lib.h(29): warning C4244: =: преобразование "double" в "long", возможна потеря данных
+C:\Users\3-3-3\source\repos\Л.Р 22 (3.к)\Л.Р 22 (3.к)\Л.Р 22 (3.к).cpp(7): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+  Л.Р 22 (3.к).vcxproj -> C:\Users\3-3-3\source\repos\Л.Р 22 (3.к)\Debug\Л.Р 22 (3.к).exe

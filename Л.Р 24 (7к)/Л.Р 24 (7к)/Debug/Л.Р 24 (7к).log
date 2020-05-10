@@ -1,0 +1,6 @@
+﻿  Л.Р 24 (7к).cpp
+C:\Users\3-3-3\source\repos\Л.Р 24 (7к)\Л.Р 24 (7к)\Gib.h(81): warning C4715: mnojestvo<int>::operator[]: значение возвращается не при всех путях выполнения
+C:\Users\3-3-3\source\repos\Л.Р 24 (7к)\Л.Р 24 (7к)\Gib.h(81): warning C4715: mnojestvo<float>::operator[]: значение возвращается не при всех путях выполнения
+C:\Users\3-3-3\source\repos\Л.Р 24 (7к)\Л.Р 24 (7к)\Gib.h(81): warning C4715: mnojestvo<double>::operator[]: значение возвращается не при всех путях выполнения
+C:\Users\3-3-3\source\repos\Л.Р 24 (7к)\Л.Р 24 (7к)\Gib.h(81): warning C4715: mnojestvo<Money>::operator[]: значение возвращается не при всех путях выполнения
+  Л.Р 24 (7к).vcxproj -> C:\Users\3-3-3\source\repos\Л.Р 24 (7к)\Debug\Л.Р 24 (7к).exe
