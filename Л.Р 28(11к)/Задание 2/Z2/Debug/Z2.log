@@ -1,0 +1,10 @@
+﻿  MoneyZ2.cpp
+C:\Users\3-3-3\source\repos\Z2\Z2\MoneyZ2.cpp(55): warning C4244: =: преобразование "__int64" в "long", возможна потеря данных
+  Z2.cpp
+C:\Users\3-3-3\source\repos\Z2\Z2\Z2.cpp(36): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\3-3-3\source\repos\Z2\Z2\Z2.cpp(49): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\3-3-3\source\repos\Z2\Z2\Z2.cpp(62): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\3-3-3\source\repos\Z2\Z2\Z2.cpp(66): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\3-3-3\source\repos\Z2\Z2\Z2.cpp(73): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Создание кода...
+  Z2.vcxproj -> C:\Users\3-3-3\source\repos\Z2\Debug\Z2.exe

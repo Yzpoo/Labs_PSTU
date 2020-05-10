@@ -1,0 +1,6 @@
+﻿  MoneyZ4.cpp
+C:\Users\3-3-3\source\repos\Z4\Z4\MoneyZ4.cpp(54): warning C4244: =: преобразование "__int64" в "long", возможна потеря данных
+  Z4.cpp
+C:\Users\3-3-3\source\repos\Z4\Z4\Z4.cpp(119): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Создание кода...
+  Z4.vcxproj -> C:\Users\3-3-3\source\repos\Z4\Debug\Z4.exe
