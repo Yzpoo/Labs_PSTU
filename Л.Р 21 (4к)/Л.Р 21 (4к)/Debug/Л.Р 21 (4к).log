@@ -1,0 +1,8 @@
+﻿  Data.cpp
+C:\Users\3-3-3\source\repos\Л.Р 21 (4к)\Л.Р 21 (4к)\Data.cpp(35): warning C4101: k: неиспользованная локальная переменная
+  Source.cpp
+C:\Users\3-3-3\source\repos\Л.Р 21 (4к)\Л.Р 21 (4к)\Source.cpp(8): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+  Triad.cpp
+  Создание кода...
+C:\Users\3-3-3\source\repos\Л.Р 21 (4к)\Л.Р 21 (4к)\Triad.cpp(78): warning C4172: возвращение адреса локальной или временной переменной : p
+  Л.Р 21 (4к).vcxproj -> C:\Users\3-3-3\source\repos\Л.Р 21 (4к)\Debug\Л.Р 21 (4к).exe
