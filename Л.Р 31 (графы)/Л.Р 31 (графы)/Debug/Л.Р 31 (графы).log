@@ -1,0 +1,23 @@
+﻿  graph.cpp
+C:\Users\3-3-3\source\repos\Л.Р 31 (графы)\Л.Р 31 (графы)\graph.h(316,24): warning C4091: extern : пропускается слева от "vertCoord", когда ни одна переменная не объявлена
+C:\Users\3-3-3\source\repos\Л.Р 31 (графы)\Л.Р 31 (графы)\graph.cpp(80,15): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+C:\Users\3-3-3\source\repos\Л.Р 31 (графы)\Л.Р 31 (графы)\graph.cpp(81,15): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+C:\Users\3-3-3\source\repos\Л.Р 31 (графы)\Л.Р 31 (графы)\graph.cpp(116,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\3-3-3\source\repos\Л.Р 31 (графы)\Л.Р 31 (графы)\graph.h(82,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\3-3-3\source\repos\Л.Р 31 (графы)\Л.Р 31 (графы)\graph.h(81): message : во время компиляции функции-члена класс шаблон "int Graph<int>::GetVertPos(const T &)"
+          with
+          [
+              T=int
+          ]
+C:\Users\3-3-3\source\repos\Л.Р 31 (графы)\Л.Р 31 (графы)\graph.h(167): message : выполняется компиляция ссылки на экземпляр шаблон функции "int Graph<int>::GetVertPos(const T &)"
+          with
+          [
+              T=int
+          ]
+C:\Users\3-3-3\source\repos\Л.Р 31 (графы)\Л.Р 31 (графы)\graph.h(63): message : во время компиляции функции-члена класс шаблон "Graph<int>::Graph(void)"
+C:\Users\3-3-3\source\repos\Л.Р 31 (графы)\Л.Р 31 (графы)\graph.cpp(11): message : выполняется компиляция ссылки на экземпляр шаблон функции "Graph<int>::Graph(void)"
+C:\Users\3-3-3\source\repos\Л.Р 31 (графы)\Л.Р 31 (графы)\graph.cpp(11): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "Graph<int>"
+  main.cpp
+C:\Users\3-3-3\source\repos\Л.Р 31 (графы)\Л.Р 31 (графы)\graph.h(316,24): warning C4091: extern : пропускается слева от "vertCoord", когда ни одна переменная не объявлена
+  Создание кода...
+  Л.Р 31 (графы).vcxproj -> C:\Users\3-3-3\source\repos\Л.Р 31 (графы)\Debug\Л.Р 31 (графы).exe
