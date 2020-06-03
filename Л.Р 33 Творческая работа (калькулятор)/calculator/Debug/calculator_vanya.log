@@ -1,0 +1,11 @@
+﻿  calculator.cpp
+C:\Users\1\source\repos\calculator_vanya\calculator_vanya\calculator.h(520,14): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\1\source\repos\calculator_vanya\calculator_vanya\calculator.h(524,14): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\1\source\repos\calculator_vanya\calculator_vanya\calculator.h(528,14): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\1\source\repos\calculator_vanya\calculator_vanya\calculator.h(532,18): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\1\source\repos\calculator_vanya\calculator_vanya\calculator.h(536,15): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\1\source\repos\calculator_vanya\calculator_vanya\calculator.h(540,15): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\1\source\repos\calculator_vanya\calculator_vanya\calculator.h(544,15): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\1\source\repos\calculator_vanya\calculator_vanya\calculator.h(548,19): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+  calculator.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  calculator_vanya.vcxproj -> C:\Users\1\source\repos\calculator_vanya\Debug\calculator_vanya.exe

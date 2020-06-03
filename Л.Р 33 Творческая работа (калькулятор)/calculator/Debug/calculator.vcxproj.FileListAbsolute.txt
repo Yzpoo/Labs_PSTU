@@ -1,0 +1,6 @@
+C:\Users\3-3-3\source\repos\calculator\calculator\Debug\calculator.vcxprojAssemblyReference.cache
+C:\Users\3-3-3\source\repos\calculator\calculator\Debug\calculatorvanya.calculator.resources
+C:\Users\3-3-3\source\repos\calculator\calculator\Debug\calculator.vcxproj.GenerateResource.cache
+C:\Users\3-3-3\source\repos\Л.Р 33 Творческая (калькулятор)\calculator\Debug\calculator.vcxprojAssemblyReference.cache
+C:\Users\3-3-3\source\repos\Л.Р 33 Творческая (калькулятор)\calculator\Debug\calculatorvanya.calculator.resources
+C:\Users\3-3-3\source\repos\Л.Р 33 Творческая (калькулятор)\calculator\Debug\calculator.vcxproj.GenerateResource.cache

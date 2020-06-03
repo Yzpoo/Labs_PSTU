@@ -1,0 +1,72 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly System.Reflection.TypeExtensions, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=SHA1, flags=PublicKey
+Assembly netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51: 
+	hash=None, flags=None
+Class System.Reflection.AssemblyExtensions: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    GetExportedTypes(Assembly): PrivateScope, Public, Static, HideBySig
+    GetModules(Assembly): PrivateScope, Public, Static, HideBySig
+    GetTypes(Assembly): PrivateScope, Public, Static, HideBySig
+Class System.Reflection.EventInfoExtensions: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    GetAddMethod(EventInfo): PrivateScope, Public, Static, HideBySig
+    GetAddMethod(EventInfo, Boolean): PrivateScope, Public, Static, HideBySig
+    GetRaiseMethod(EventInfo): PrivateScope, Public, Static, HideBySig
+    GetRaiseMethod(EventInfo, Boolean): PrivateScope, Public, Static, HideBySig
+    GetRemoveMethod(EventInfo): PrivateScope, Public, Static, HideBySig
+    GetRemoveMethod(EventInfo, Boolean): PrivateScope, Public, Static, HideBySig
+Class System.Reflection.MemberInfoExtensions: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    GetMetadataToken(MemberInfo): PrivateScope, Public, Static, HideBySig
+    HasMetadataToken(MemberInfo): PrivateScope, Public, Static, HideBySig
+Class System.Reflection.MethodInfoExtensions: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    GetBaseDefinition(MethodInfo): PrivateScope, Public, Static, HideBySig
+Class System.Reflection.ModuleExtensions: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    GetModuleVersionId(Module): PrivateScope, Public, Static, HideBySig
+    HasModuleVersionId(Module): PrivateScope, Public, Static, HideBySig
+Class System.Reflection.PropertyInfoExtensions: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    GetAccessors(PropertyInfo): PrivateScope, Public, Static, HideBySig
+    GetAccessors(PropertyInfo, Boolean): PrivateScope, Public, Static, HideBySig
+    GetGetMethod(PropertyInfo): PrivateScope, Public, Static, HideBySig
+    GetGetMethod(PropertyInfo, Boolean): PrivateScope, Public, Static, HideBySig
+    GetSetMethod(PropertyInfo): PrivateScope, Public, Static, HideBySig
+    GetSetMethod(PropertyInfo, Boolean): PrivateScope, Public, Static, HideBySig
+Class System.Reflection.TypeExtensions: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    GetConstructor(Type, Type[]): PrivateScope, Public, Static, HideBySig
+    GetConstructors(Type): PrivateScope, Public, Static, HideBySig
+    GetConstructors(Type, BindingFlags): PrivateScope, Public, Static, HideBySig
+    GetDefaultMembers(Type): PrivateScope, Public, Static, HideBySig
+    GetEvent(Type, String): PrivateScope, Public, Static, HideBySig
+    GetEvent(Type, String, BindingFlags): PrivateScope, Public, Static, HideBySig
+    GetEvents(Type): PrivateScope, Public, Static, HideBySig
+    GetEvents(Type, BindingFlags): PrivateScope, Public, Static, HideBySig
+    GetField(Type, String): PrivateScope, Public, Static, HideBySig
+    GetField(Type, String, BindingFlags): PrivateScope, Public, Static, HideBySig
+    GetFields(Type): PrivateScope, Public, Static, HideBySig
+    GetFields(Type, BindingFlags): PrivateScope, Public, Static, HideBySig
+    GetGenericArguments(Type): PrivateScope, Public, Static, HideBySig
+    GetInterfaces(Type): PrivateScope, Public, Static, HideBySig
+    GetMember(Type, String): PrivateScope, Public, Static, HideBySig
+    GetMember(Type, String, BindingFlags): PrivateScope, Public, Static, HideBySig
+    GetMembers(Type): PrivateScope, Public, Static, HideBySig
+    GetMembers(Type, BindingFlags): PrivateScope, Public, Static, HideBySig
+    GetMethod(Type, String): PrivateScope, Public, Static, HideBySig
+    GetMethod(Type, String, BindingFlags): PrivateScope, Public, Static, HideBySig
+    GetMethod(Type, String, Type[]): PrivateScope, Public, Static, HideBySig
+    GetMethods(Type): PrivateScope, Public, Static, HideBySig
+    GetMethods(Type, BindingFlags): PrivateScope, Public, Static, HideBySig
+    GetNestedType(Type, String, BindingFlags): PrivateScope, Public, Static, HideBySig
+    GetNestedTypes(Type, BindingFlags): PrivateScope, Public, Static, HideBySig
+    GetProperties(Type): PrivateScope, Public, Static, HideBySig
+    GetProperties(Type, BindingFlags): PrivateScope, Public, Static, HideBySig
+    GetProperty(Type, String): PrivateScope, Public, Static, HideBySig
+    GetProperty(Type, String, BindingFlags): PrivateScope, Public, Static, HideBySig
+    GetProperty(Type, String, Type): PrivateScope, Public, Static, HideBySig
+    GetProperty(Type, String, Type, Type[]): PrivateScope, Public, Static, HideBySig
+    IsAssignableFrom(Type, Type): PrivateScope, Public, Static, HideBySig
+    IsInstanceOfType(Type, Object): PrivateScope, Public, Static, HideBySig

@@ -1,0 +1,3 @@
+C:\Users\1\source\repos\calculator_vanya\calculator_vanya\Debug\calculator_vanya.vcxprojAssemblyReference.cache
+C:\Users\1\source\repos\calculator_vanya\calculator_vanya\Debug\calculatorvanya.calculator.resources
+C:\Users\1\source\repos\calculator_vanya\calculator_vanya\Debug\calculator_vanya.vcxproj.GenerateResource.cache

@@ -1,0 +1,42 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly System.Runtime.CompilerServices.Unsafe, Version=4.0.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=SHA1, flags=PublicKey
+Assembly netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51: 
+	hash=None, flags=None
+Class System.Runtime.CompilerServices.Unsafe: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    AddByteOffset(T&, IntPtr): PrivateScope, Public, Static, HideBySig
+    Add(Void*, Int32): PrivateScope, Public, Static, HideBySig
+    Add(T&, Int32): PrivateScope, Public, Static, HideBySig
+    Add(T&, IntPtr): PrivateScope, Public, Static, HideBySig
+    AreSame(T&, T&): PrivateScope, Public, Static, HideBySig
+    AsPointer(T&): PrivateScope, Public, Static, HideBySig
+    AsRef(Void*): PrivateScope, Public, Static, HideBySig
+    AsRef(T&(In)): PrivateScope, Public, Static, HideBySig
+    As(Object): PrivateScope, Public, Static, HideBySig
+    As(TFrom&): PrivateScope, Public, Static, HideBySig
+    ByteOffset(T&, T&): PrivateScope, Public, Static, HideBySig
+    CopyBlock(Byte&, Byte&, UInt32): PrivateScope, Public, Static, HideBySig
+    CopyBlock(Void*, Void*, UInt32): PrivateScope, Public, Static, HideBySig
+    CopyBlockUnaligned(Byte&, Byte&, UInt32): PrivateScope, Public, Static, HideBySig
+    CopyBlockUnaligned(Void*, Void*, UInt32): PrivateScope, Public, Static, HideBySig
+    Copy(Void*, T&): PrivateScope, Public, Static, HideBySig
+    Copy(T&, Void*): PrivateScope, Public, Static, HideBySig
+    InitBlock(Byte&, Byte, UInt32): PrivateScope, Public, Static, HideBySig
+    InitBlock(Void*, Byte, UInt32): PrivateScope, Public, Static, HideBySig
+    InitBlockUnaligned(Byte&, Byte, UInt32): PrivateScope, Public, Static, HideBySig
+    InitBlockUnaligned(Void*, Byte, UInt32): PrivateScope, Public, Static, HideBySig
+    IsAddressGreaterThan(T&, T&): PrivateScope, Public, Static, HideBySig
+    IsAddressLessThan(T&, T&): PrivateScope, Public, Static, HideBySig
+    ReadUnaligned(Byte&): PrivateScope, Public, Static, HideBySig
+    ReadUnaligned(Void*): PrivateScope, Public, Static, HideBySig
+    Read(Void*): PrivateScope, Public, Static, HideBySig
+    SizeOf(): PrivateScope, Public, Static, HideBySig
+    SubtractByteOffset(T&, IntPtr): PrivateScope, Public, Static, HideBySig
+    Subtract(Void*, Int32): PrivateScope, Public, Static, HideBySig
+    Subtract(T&, Int32): PrivateScope, Public, Static, HideBySig
+    Subtract(T&, IntPtr): PrivateScope, Public, Static, HideBySig
+    Unbox(Object): PrivateScope, Public, Static, HideBySig
+    WriteUnaligned(Byte&, T): PrivateScope, Public, Static, HideBySig
+    WriteUnaligned(Void*, T): PrivateScope, Public, Static, HideBySig
+    Write(Void*, T): PrivateScope, Public, Static, HideBySig

@@ -1,0 +1,410 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly System.Threading.Tasks.Dataflow, Version=4.6.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=SHA1, flags=PublicKey
+Assembly netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51: 
+	hash=None, flags=None
+Class System.Threading.Tasks.Dataflow.ActionBlock`1[TInput]: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  Type parameter: TInput
+    Void .ctor(System.Action`1[TInput]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Action`1[TInput], System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Func`2[TInput,System.Threading.Tasks.Task]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Func`2[TInput,System.Threading.Tasks.Task], System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Threading.Tasks.Dataflow.IDataflowBlock
+    System.Threading.Tasks.Dataflow.ITargetBlock`1[TInput]
+  Properties:
+    System.Threading.Tasks.Task Completion 'get ' : 
+    Int32 InputCount 'get ' : 
+  Methods:
+    get_Completion(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_InputCount(): PrivateScope, Public, HideBySig, SpecialName
+    Complete(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Post(TInput): PrivateScope, Public, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class System.Threading.Tasks.Dataflow.BatchBlock`1[T]: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  Type parameter: T
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32, System.Threading.Tasks.Dataflow.GroupingDataflowBlockOptions): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Threading.Tasks.Dataflow.IDataflowBlock
+    System.Threading.Tasks.Dataflow.IPropagatorBlock`2[T,T[]]
+    System.Threading.Tasks.Dataflow.ISourceBlock`1[T[]]
+    System.Threading.Tasks.Dataflow.ITargetBlock`1[T]
+    System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1[T[]]
+  Properties:
+    Int32 BatchSize 'get ' : 
+    System.Threading.Tasks.Task Completion 'get ' : 
+    Int32 OutputCount 'get ' : 
+  Methods:
+    get_BatchSize(): PrivateScope, Public, HideBySig, SpecialName
+    get_Completion(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_OutputCount(): PrivateScope, Public, HideBySig, SpecialName
+    Complete(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    LinkTo(ITargetBlock`1, DataflowLinkOptions): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    TriggerBatch(): PrivateScope, Public, HideBySig
+    TryReceive(Predicate`1, T[]&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TryReceiveAll(IList`1&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class System.Threading.Tasks.Dataflow.BatchedJoinBlock`2[T1,T2]: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  Type parameter: T1
+  Type parameter: T2
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32, System.Threading.Tasks.Dataflow.GroupingDataflowBlockOptions): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Threading.Tasks.Dataflow.IDataflowBlock
+    System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1[System.Tuple`2[System.Collections.Generic.IList`1[T1],System.Collections.Generic.IList`1[T2]]]
+    System.Threading.Tasks.Dataflow.ISourceBlock`1[System.Tuple`2[System.Collections.Generic.IList`1[T1],System.Collections.Generic.IList`1[T2]]]
+  Properties:
+    Int32 BatchSize 'get ' : 
+    System.Threading.Tasks.Task Completion 'get ' : 
+    Int32 OutputCount 'get ' : 
+    System.Threading.Tasks.Dataflow.ITargetBlock`1[T1] Target1 'get ' : 
+    System.Threading.Tasks.Dataflow.ITargetBlock`1[T2] Target2 'get ' : 
+  Methods:
+    get_BatchSize(): PrivateScope, Public, HideBySig, SpecialName
+    get_Completion(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_OutputCount(): PrivateScope, Public, HideBySig, SpecialName
+    get_Target1(): PrivateScope, Public, HideBySig, SpecialName
+    get_Target2(): PrivateScope, Public, HideBySig, SpecialName
+    Complete(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    LinkTo(ITargetBlock`1, DataflowLinkOptions): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    TryReceive(Predicate`1, Tuple`2&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TryReceiveAll(IList`1&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class System.Threading.Tasks.Dataflow.BatchedJoinBlock`3[T1,T2,T3]: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  Type parameter: T1
+  Type parameter: T2
+  Type parameter: T3
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32, System.Threading.Tasks.Dataflow.GroupingDataflowBlockOptions): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Threading.Tasks.Dataflow.IDataflowBlock
+    System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1[System.Tuple`3[System.Collections.Generic.IList`1[T1],System.Collections.Generic.IList`1[T2],System.Collections.Generic.IList`1[T3]]]
+    System.Threading.Tasks.Dataflow.ISourceBlock`1[System.Tuple`3[System.Collections.Generic.IList`1[T1],System.Collections.Generic.IList`1[T2],System.Collections.Generic.IList`1[T3]]]
+  Properties:
+    Int32 BatchSize 'get ' : 
+    System.Threading.Tasks.Task Completion 'get ' : 
+    Int32 OutputCount 'get ' : 
+    System.Threading.Tasks.Dataflow.ITargetBlock`1[T1] Target1 'get ' : 
+    System.Threading.Tasks.Dataflow.ITargetBlock`1[T2] Target2 'get ' : 
+    System.Threading.Tasks.Dataflow.ITargetBlock`1[T3] Target3 'get ' : 
+  Methods:
+    get_BatchSize(): PrivateScope, Public, HideBySig, SpecialName
+    get_Completion(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_OutputCount(): PrivateScope, Public, HideBySig, SpecialName
+    get_Target1(): PrivateScope, Public, HideBySig, SpecialName
+    get_Target2(): PrivateScope, Public, HideBySig, SpecialName
+    get_Target3(): PrivateScope, Public, HideBySig, SpecialName
+    Complete(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    LinkTo(ITargetBlock`1, DataflowLinkOptions): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    TryReceive(Predicate`1, Tuple`3&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TryReceiveAll(IList`1&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class System.Threading.Tasks.Dataflow.BroadcastBlock`1[T]: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  Type parameter: T
+    Void .ctor(System.Func`2[T,T]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Func`2[T,T], System.Threading.Tasks.Dataflow.DataflowBlockOptions): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Threading.Tasks.Dataflow.IDataflowBlock
+    System.Threading.Tasks.Dataflow.IPropagatorBlock`2[T,T]
+    System.Threading.Tasks.Dataflow.ISourceBlock`1[T]
+    System.Threading.Tasks.Dataflow.ITargetBlock`1[T]
+    System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1[T]
+  Properties:
+    System.Threading.Tasks.Task Completion 'get ' : 
+  Methods:
+    get_Completion(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Complete(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    LinkTo(ITargetBlock`1, DataflowLinkOptions): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    TryReceive(Predicate`1, T&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class System.Threading.Tasks.Dataflow.BufferBlock`1[T]: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  Type parameter: T
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Threading.Tasks.Dataflow.DataflowBlockOptions): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Threading.Tasks.Dataflow.IDataflowBlock
+    System.Threading.Tasks.Dataflow.IPropagatorBlock`2[T,T]
+    System.Threading.Tasks.Dataflow.ISourceBlock`1[T]
+    System.Threading.Tasks.Dataflow.ITargetBlock`1[T]
+    System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1[T]
+  Properties:
+    System.Threading.Tasks.Task Completion 'get ' : 
+    Int32 Count 'get ' : 
+  Methods:
+    get_Completion(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Count(): PrivateScope, Public, HideBySig, SpecialName
+    Complete(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    LinkTo(ITargetBlock`1, DataflowLinkOptions): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    TryReceive(Predicate`1, T&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TryReceiveAll(IList`1&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class System.Threading.Tasks.Dataflow.DataflowBlock: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    AsObservable(ISourceBlock`1): PrivateScope, Public, Static, HideBySig
+    AsObserver(ITargetBlock`1): PrivateScope, Public, Static, HideBySig
+    Choose(ISourceBlock`1, Action`1, ISourceBlock`1, Action`1): PrivateScope, Public, Static, HideBySig
+    Choose(ISourceBlock`1, Action`1, ISourceBlock`1, Action`1, DataflowBlockOptions): PrivateScope, Public, Static, HideBySig
+    Choose(ISourceBlock`1, Action`1, ISourceBlock`1, Action`1, ISourceBlock`1, Action`1): PrivateScope, Public, Static, HideBySig
+    Choose(ISourceBlock`1, Action`1, ISourceBlock`1, Action`1, ISourceBlock`1, Action`1, DataflowBlockOptions): PrivateScope, Public, Static, HideBySig
+    Encapsulate(ITargetBlock`1, ISourceBlock`1): PrivateScope, Public, Static, HideBySig
+    LinkTo(ISourceBlock`1, ITargetBlock`1): PrivateScope, Public, Static, HideBySig
+    LinkTo(ISourceBlock`1, ITargetBlock`1, Predicate`1): PrivateScope, Public, Static, HideBySig
+    LinkTo(ISourceBlock`1, ITargetBlock`1, DataflowLinkOptions, Predicate`1): PrivateScope, Public, Static, HideBySig
+    NullTarget(): PrivateScope, Public, Static, HideBySig
+    OutputAvailableAsync(ISourceBlock`1): PrivateScope, Public, Static, HideBySig
+    OutputAvailableAsync(ISourceBlock`1, CancellationToken): PrivateScope, Public, Static, HideBySig
+    Post(ITargetBlock`1, TInput): PrivateScope, Public, Static, HideBySig
+    ReceiveAsync(ISourceBlock`1): PrivateScope, Public, Static, HideBySig
+    ReceiveAsync(ISourceBlock`1, CancellationToken): PrivateScope, Public, Static, HideBySig
+    ReceiveAsync(ISourceBlock`1, TimeSpan): PrivateScope, Public, Static, HideBySig
+    ReceiveAsync(ISourceBlock`1, TimeSpan, CancellationToken): PrivateScope, Public, Static, HideBySig
+    Receive(ISourceBlock`1): PrivateScope, Public, Static, HideBySig
+    Receive(ISourceBlock`1, CancellationToken): PrivateScope, Public, Static, HideBySig
+    Receive(ISourceBlock`1, TimeSpan): PrivateScope, Public, Static, HideBySig
+    Receive(ISourceBlock`1, TimeSpan, CancellationToken): PrivateScope, Public, Static, HideBySig
+    SendAsync(ITargetBlock`1, TInput): PrivateScope, Public, Static, HideBySig
+    SendAsync(ITargetBlock`1, TInput, CancellationToken): PrivateScope, Public, Static, HideBySig
+    TryReceive(IReceivableSourceBlock`1, TOutput&(Out)): PrivateScope, Public, Static, HideBySig
+Class System.Threading.Tasks.Dataflow.DataflowBlockOptions: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 Unbounded = -1 : Public, Static, Literal, HasDefault
+  Properties:
+    Int32 BoundedCapacity 'get set' : 
+    System.Threading.CancellationToken CancellationToken 'get set' : 
+    Boolean EnsureOrdered 'get set' : 
+    Int32 MaxMessagesPerTask 'get set' : 
+    System.String NameFormat 'get set' : 
+    System.Threading.Tasks.TaskScheduler TaskScheduler 'get set' : 
+  Methods:
+    get_BoundedCapacity(): PrivateScope, Public, HideBySig, SpecialName
+    set_BoundedCapacity(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_CancellationToken(): PrivateScope, Public, HideBySig, SpecialName
+    set_CancellationToken(CancellationToken): PrivateScope, Public, HideBySig, SpecialName
+    get_EnsureOrdered(): PrivateScope, Public, HideBySig, SpecialName
+    set_EnsureOrdered(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_MaxMessagesPerTask(): PrivateScope, Public, HideBySig, SpecialName
+    set_MaxMessagesPerTask(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_NameFormat(): PrivateScope, Public, HideBySig, SpecialName
+    set_NameFormat(String): PrivateScope, Public, HideBySig, SpecialName
+    get_TaskScheduler(): PrivateScope, Public, HideBySig, SpecialName
+    set_TaskScheduler(TaskScheduler): PrivateScope, Public, HideBySig, SpecialName
+Class System.Threading.Tasks.Dataflow.DataflowLinkOptions: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean Append 'get set' : 
+    Int32 MaxMessages 'get set' : 
+    Boolean PropagateCompletion 'get set' : 
+  Methods:
+    get_Append(): PrivateScope, Public, HideBySig, SpecialName
+    set_Append(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_MaxMessages(): PrivateScope, Public, HideBySig, SpecialName
+    set_MaxMessages(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_PropagateCompletion(): PrivateScope, Public, HideBySig, SpecialName
+    set_PropagateCompletion(Boolean): PrivateScope, Public, HideBySig, SpecialName
+Struct System.Threading.Tasks.Dataflow.DataflowMessageHeader: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(Int64): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IEquatable`1[System.Threading.Tasks.Dataflow.DataflowMessageHeader]
+  Properties:
+    Int64 Id   'get ' : 
+    Boolean IsValid 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsValid(): PrivateScope, Public, HideBySig, SpecialName
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    Equals(DataflowMessageHeader): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    op_Equality(DataflowMessageHeader, DataflowMessageHeader): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(DataflowMessageHeader, DataflowMessageHeader): PrivateScope, Public, Static, HideBySig, SpecialName
+Struct System.Threading.Tasks.Dataflow.DataflowMessageStatus: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Threading.Tasks.Dataflow.DataflowMessageStatus Accepted = 0 : Public, Static, Literal, HasDefault
+    System.Threading.Tasks.Dataflow.DataflowMessageStatus Declined = 1 : Public, Static, Literal, HasDefault
+    System.Threading.Tasks.Dataflow.DataflowMessageStatus Postponed = 2 : Public, Static, Literal, HasDefault
+    System.Threading.Tasks.Dataflow.DataflowMessageStatus NotAvailable = 3 : Public, Static, Literal, HasDefault
+    System.Threading.Tasks.Dataflow.DataflowMessageStatus DecliningPermanently = 4 : Public, Static, Literal, HasDefault
+Class System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Threading.Tasks.Dataflow.DataflowBlockOptions
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 MaxDegreeOfParallelism 'get set' : 
+    Boolean SingleProducerConstrained 'get set' : 
+  Methods:
+    get_MaxDegreeOfParallelism(): PrivateScope, Public, HideBySig, SpecialName
+    set_MaxDegreeOfParallelism(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_SingleProducerConstrained(): PrivateScope, Public, HideBySig, SpecialName
+    set_SingleProducerConstrained(Boolean): PrivateScope, Public, HideBySig, SpecialName
+Class System.Threading.Tasks.Dataflow.GroupingDataflowBlockOptions: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Threading.Tasks.Dataflow.DataflowBlockOptions
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean Greedy 'get set' : 
+    Int64 MaxNumberOfGroups 'get set' : 
+  Methods:
+    get_Greedy(): PrivateScope, Public, HideBySig, SpecialName
+    set_Greedy(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_MaxNumberOfGroups(): PrivateScope, Public, HideBySig, SpecialName
+    set_MaxNumberOfGroups(Int64): PrivateScope, Public, HideBySig, SpecialName
+Interface System.Threading.Tasks.Dataflow.IDataflowBlock: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Properties:
+    System.Threading.Tasks.Task Completion 'get ' : 
+  Methods:
+    get_Completion(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    Complete(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Fault(Exception): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface System.Threading.Tasks.Dataflow.IPropagatorBlock`2[TInput,TOutput]: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Type parameter: TInput,  Contravariant
+  Type parameter: TOutput,  Covariant
+  Interfaces:
+    System.Threading.Tasks.Dataflow.IDataflowBlock
+    System.Threading.Tasks.Dataflow.ISourceBlock`1[TOutput]
+    System.Threading.Tasks.Dataflow.ITargetBlock`1[TInput]
+Interface System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1[TOutput]: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Type parameter: TOutput
+  Interfaces:
+    System.Threading.Tasks.Dataflow.IDataflowBlock
+    System.Threading.Tasks.Dataflow.ISourceBlock`1[TOutput]
+  Methods:
+    TryReceive(Predicate`1, TOutput&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    TryReceiveAll(IList`1&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface System.Threading.Tasks.Dataflow.ISourceBlock`1[TOutput]: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Type parameter: TOutput,  Covariant
+  Interfaces:
+    System.Threading.Tasks.Dataflow.IDataflowBlock
+  Methods:
+    ConsumeMessage(DataflowMessageHeader, ITargetBlock`1, Boolean&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    LinkTo(ITargetBlock`1, DataflowLinkOptions): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ReleaseReservation(DataflowMessageHeader, ITargetBlock`1): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ReserveMessage(DataflowMessageHeader, ITargetBlock`1): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface System.Threading.Tasks.Dataflow.ITargetBlock`1[TInput]: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Type parameter: TInput,  Contravariant
+  Interfaces:
+    System.Threading.Tasks.Dataflow.IDataflowBlock
+  Methods:
+    OfferMessage(DataflowMessageHeader, TInput, ISourceBlock`1, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class System.Threading.Tasks.Dataflow.JoinBlock`2[T1,T2]: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  Type parameter: T1
+  Type parameter: T2
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Threading.Tasks.Dataflow.GroupingDataflowBlockOptions): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Threading.Tasks.Dataflow.IDataflowBlock
+    System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1[System.Tuple`2[T1,T2]]
+    System.Threading.Tasks.Dataflow.ISourceBlock`1[System.Tuple`2[T1,T2]]
+  Properties:
+    System.Threading.Tasks.Task Completion 'get ' : 
+    Int32 OutputCount 'get ' : 
+    System.Threading.Tasks.Dataflow.ITargetBlock`1[T1] Target1 'get ' : 
+    System.Threading.Tasks.Dataflow.ITargetBlock`1[T2] Target2 'get ' : 
+  Methods:
+    get_Completion(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_OutputCount(): PrivateScope, Public, HideBySig, SpecialName
+    get_Target1(): PrivateScope, Public, HideBySig, SpecialName
+    get_Target2(): PrivateScope, Public, HideBySig, SpecialName
+    Complete(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    LinkTo(ITargetBlock`1, DataflowLinkOptions): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    TryReceive(Predicate`1, Tuple`2&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TryReceiveAll(IList`1&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class System.Threading.Tasks.Dataflow.JoinBlock`3[T1,T2,T3]: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  Type parameter: T1
+  Type parameter: T2
+  Type parameter: T3
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Threading.Tasks.Dataflow.GroupingDataflowBlockOptions): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Threading.Tasks.Dataflow.IDataflowBlock
+    System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1[System.Tuple`3[T1,T2,T3]]
+    System.Threading.Tasks.Dataflow.ISourceBlock`1[System.Tuple`3[T1,T2,T3]]
+  Properties:
+    System.Threading.Tasks.Task Completion 'get ' : 
+    Int32 OutputCount 'get ' : 
+    System.Threading.Tasks.Dataflow.ITargetBlock`1[T1] Target1 'get ' : 
+    System.Threading.Tasks.Dataflow.ITargetBlock`1[T2] Target2 'get ' : 
+    System.Threading.Tasks.Dataflow.ITargetBlock`1[T3] Target3 'get ' : 
+  Methods:
+    get_Completion(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_OutputCount(): PrivateScope, Public, HideBySig, SpecialName
+    get_Target1(): PrivateScope, Public, HideBySig, SpecialName
+    get_Target2(): PrivateScope, Public, HideBySig, SpecialName
+    get_Target3(): PrivateScope, Public, HideBySig, SpecialName
+    Complete(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    LinkTo(ITargetBlock`1, DataflowLinkOptions): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    TryReceive(Predicate`1, Tuple`3&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TryReceiveAll(IList`1&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class System.Threading.Tasks.Dataflow.TransformBlock`2[TInput,TOutput]: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  Type parameter: TInput
+  Type parameter: TOutput
+    Void .ctor(System.Func`2[TInput,System.Threading.Tasks.Task`1[TOutput]]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Func`2[TInput,System.Threading.Tasks.Task`1[TOutput]], System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Func`2[TInput,TOutput]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Func`2[TInput,TOutput], System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Threading.Tasks.Dataflow.IDataflowBlock
+    System.Threading.Tasks.Dataflow.IPropagatorBlock`2[TInput,TOutput]
+    System.Threading.Tasks.Dataflow.ISourceBlock`1[TOutput]
+    System.Threading.Tasks.Dataflow.ITargetBlock`1[TInput]
+    System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1[TOutput]
+  Properties:
+    System.Threading.Tasks.Task Completion 'get ' : 
+    Int32 InputCount 'get ' : 
+    Int32 OutputCount 'get ' : 
+  Methods:
+    get_Completion(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_InputCount(): PrivateScope, Public, HideBySig, SpecialName
+    get_OutputCount(): PrivateScope, Public, HideBySig, SpecialName
+    Complete(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    LinkTo(ITargetBlock`1, DataflowLinkOptions): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    TryReceive(Predicate`1, TOutput&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TryReceiveAll(IList`1&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class System.Threading.Tasks.Dataflow.TransformManyBlock`2[TInput,TOutput]: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  Type parameter: TInput
+  Type parameter: TOutput
+    Void .ctor(System.Func`2[TInput,System.Collections.Generic.IEnumerable`1[TOutput]]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Func`2[TInput,System.Collections.Generic.IEnumerable`1[TOutput]], System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Func`2[TInput,System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[TOutput]]]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Func`2[TInput,System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[TOutput]]], System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Threading.Tasks.Dataflow.IDataflowBlock
+    System.Threading.Tasks.Dataflow.IPropagatorBlock`2[TInput,TOutput]
+    System.Threading.Tasks.Dataflow.ISourceBlock`1[TOutput]
+    System.Threading.Tasks.Dataflow.ITargetBlock`1[TInput]
+    System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1[TOutput]
+  Properties:
+    System.Threading.Tasks.Task Completion 'get ' : 
+    Int32 InputCount 'get ' : 
+    Int32 OutputCount 'get ' : 
+  Methods:
+    get_Completion(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_InputCount(): PrivateScope, Public, HideBySig, SpecialName
+    get_OutputCount(): PrivateScope, Public, HideBySig, SpecialName
+    Complete(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    LinkTo(ITargetBlock`1, DataflowLinkOptions): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    TryReceive(Predicate`1, TOutput&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TryReceiveAll(IList`1&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class System.Threading.Tasks.Dataflow.WriteOnceBlock`1[T]: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  Type parameter: T
+    Void .ctor(System.Func`2[T,T]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Func`2[T,T], System.Threading.Tasks.Dataflow.DataflowBlockOptions): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Threading.Tasks.Dataflow.IDataflowBlock
+    System.Threading.Tasks.Dataflow.IPropagatorBlock`2[T,T]
+    System.Threading.Tasks.Dataflow.ISourceBlock`1[T]
+    System.Threading.Tasks.Dataflow.ITargetBlock`1[T]
+    System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1[T]
+  Properties:
+    System.Threading.Tasks.Task Completion 'get ' : 
+  Methods:
+    get_Completion(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Complete(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    LinkTo(ITargetBlock`1, DataflowLinkOptions): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    TryReceive(Predicate`1, T&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask

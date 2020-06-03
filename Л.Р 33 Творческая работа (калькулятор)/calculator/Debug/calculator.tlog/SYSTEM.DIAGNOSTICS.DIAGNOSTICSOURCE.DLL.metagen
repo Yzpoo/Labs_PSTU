@@ -1,0 +1,144 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly System.Diagnostics.DiagnosticSource, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51: 
+	hash=SHA1, flags=PublicKey
+Assembly netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51: 
+	hash=None, flags=None
+Assembly System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51: 
+	hash=None, flags=None
+Class System.Diagnostics.DiagnosticListener: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Diagnostics.DiagnosticSource
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+    System.IObservable`1[System.Collections.Generic.KeyValuePair`2[System.String,System.Object]]
+  Properties:
+    System.IObservable`1[System.Diagnostics.DiagnosticListener] AllListeners 'get ' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_AllListeners(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+    Dispose(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    IsEnabled(): PrivateScope, Public, HideBySig
+    IsEnabled(String): PrivateScope, Public, Virtual, HideBySig
+    IsEnabled(String, Object, Object(Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig
+    Subscribe(IObserver`1): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Subscribe(IObserver`1, Func`4): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Subscribe(IObserver`1, Predicate`1): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    Write(String, Object): PrivateScope, Public, Virtual, HideBySig
+    OnActivityExport(Activity, Object): PrivateScope, Public, Virtual, HideBySig
+    OnActivityImport(Activity, Object): PrivateScope, Public, Virtual, HideBySig
+    Subscribe(IObserver`1, Func`4, Action`2(Optional, HasDefault), Action`2(Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class System.Diagnostics.DiagnosticSource: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  Methods:
+    IsEnabled(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    IsEnabled(String, Object, Object(Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Write(String, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    OnActivityExport(Activity, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OnActivityImport(Activity, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    StartActivity(Activity, Object): PrivateScope, Public, HideBySig
+    StopActivity(Activity, Object): PrivateScope, Public, HideBySig
+Class System.Diagnostics.Activity: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Collections.Generic.IEnumerable`1[System.Collections.Generic.KeyValuePair`2[System.String,System.String]] Baggage 'get ' : 
+    System.Diagnostics.Activity Current 'get set' : 
+    System.Diagnostics.ActivityIdFormat DefaultIdFormat 'get set' : 
+    System.TimeSpan Duration 'get ' : 
+    Boolean ForceDefaultIdFormat 'get set' : 
+    System.String Id 'get ' : 
+    System.Diagnostics.ActivityIdFormat IdFormat 'get ' : 
+    System.String OperationName 'get ' : 
+    System.Diagnostics.Activity Parent 'get ' : 
+    System.String ParentId 'get ' : 
+    System.Diagnostics.ActivitySpanId ParentSpanId 'get ' : 
+    Boolean Recorded 'get ' : 
+    System.String RootId 'get ' : 
+    System.Diagnostics.ActivitySpanId SpanId 'get ' : 
+    System.DateTime StartTimeUtc 'get ' : 
+    System.Collections.Generic.IEnumerable`1[System.Collections.Generic.KeyValuePair`2[System.String,System.String]] Tags 'get ' : 
+    System.Diagnostics.ActivityTraceId TraceId 'get ' : 
+    System.String TraceStateString 'get set' : 
+    System.Diagnostics.ActivityTraceFlags ActivityTraceFlags 'get set' : 
+  Methods:
+    get_Baggage(): PrivateScope, Public, HideBySig, SpecialName
+    get_Current(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_Current(Activity): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_DefaultIdFormat(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_DefaultIdFormat(ActivityIdFormat): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Duration(): PrivateScope, Public, HideBySig, SpecialName
+    get_ForceDefaultIdFormat(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_ForceDefaultIdFormat(Boolean): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Id(): PrivateScope, Public, HideBySig, SpecialName
+    get_IdFormat(): PrivateScope, Public, HideBySig, SpecialName
+    get_OperationName(): PrivateScope, Public, HideBySig, SpecialName
+    get_Parent(): PrivateScope, Public, HideBySig, SpecialName
+    get_ParentId(): PrivateScope, Public, HideBySig, SpecialName
+    get_ParentSpanId(): PrivateScope, Public, HideBySig, SpecialName
+    get_Recorded(): PrivateScope, Public, HideBySig, SpecialName
+    get_RootId(): PrivateScope, Public, HideBySig, SpecialName
+    get_SpanId(): PrivateScope, Public, HideBySig, SpecialName
+    get_StartTimeUtc(): PrivateScope, Public, HideBySig, SpecialName
+    get_Tags(): PrivateScope, Public, HideBySig, SpecialName
+    get_TraceId(): PrivateScope, Public, HideBySig, SpecialName
+    get_TraceStateString(): PrivateScope, Public, HideBySig, SpecialName
+    set_TraceStateString(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ActivityTraceFlags(): PrivateScope, Public, HideBySig, SpecialName
+    set_ActivityTraceFlags(ActivityTraceFlags): PrivateScope, Public, HideBySig, SpecialName
+    AddBaggage(String, String): PrivateScope, Public, HideBySig
+    AddTag(String, String): PrivateScope, Public, HideBySig
+    GetBaggageItem(String): PrivateScope, Public, HideBySig
+    SetEndTime(DateTime): PrivateScope, Public, HideBySig
+    SetParentId(ActivityTraceId, ActivitySpanId, ActivityTraceFlags(Optional, HasDefault)): PrivateScope, Public, HideBySig
+    SetIdFormat(ActivityIdFormat): PrivateScope, Public, HideBySig
+    SetParentId(String): PrivateScope, Public, HideBySig
+    SetStartTime(DateTime): PrivateScope, Public, HideBySig
+    Start(): PrivateScope, Public, HideBySig
+    Stop(): PrivateScope, Public, HideBySig
+Struct System.Diagnostics.ActivityIdFormat: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Diagnostics.ActivityIdFormat Hierarchical = 1 : Public, Static, Literal, HasDefault
+    System.Diagnostics.ActivityIdFormat Unknown = 0 : Public, Static, Literal, HasDefault
+    System.Diagnostics.ActivityIdFormat W3C = 2 : Public, Static, Literal, HasDefault
+Struct System.Diagnostics.ActivitySpanId: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Interfaces:
+    System.IEquatable`1[System.Diagnostics.ActivitySpanId]
+  Methods:
+    CopyTo(Span`1): PrivateScope, Public, HideBySig
+    CreateFromBytes(ReadOnlySpan`1): PrivateScope, Public, Static, HideBySig
+    CreateFromString(ReadOnlySpan`1): PrivateScope, Public, Static, HideBySig
+    CreateFromUtf8String(ReadOnlySpan`1): PrivateScope, Public, Static, HideBySig
+    CreateRandom(): PrivateScope, Public, Static, HideBySig
+    Equals(ActivitySpanId): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    op_Equality(ActivitySpanId, ActivitySpanId): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(ActivitySpanId, ActivitySpanId): PrivateScope, Public, Static, HideBySig, SpecialName
+    ToHexString(): PrivateScope, Public, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Struct System.Diagnostics.ActivityTraceId: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Interfaces:
+    System.IEquatable`1[System.Diagnostics.ActivityTraceId]
+  Methods:
+    CopyTo(Span`1): PrivateScope, Public, HideBySig
+    CreateFromBytes(ReadOnlySpan`1): PrivateScope, Public, Static, HideBySig
+    CreateFromString(ReadOnlySpan`1): PrivateScope, Public, Static, HideBySig
+    CreateFromUtf8String(ReadOnlySpan`1): PrivateScope, Public, Static, HideBySig
+    CreateRandom(): PrivateScope, Public, Static, HideBySig
+    Equals(ActivityTraceId): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    op_Equality(ActivityTraceId, ActivityTraceId): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(ActivityTraceId, ActivityTraceId): PrivateScope, Public, Static, HideBySig, SpecialName
+    ToHexString(): PrivateScope, Public, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Struct System.Diagnostics.ActivityTraceFlags: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Diagnostics.ActivityTraceFlags None = 0 : Public, Static, Literal, HasDefault
+    System.Diagnostics.ActivityTraceFlags Recorded = 1 : Public, Static, Literal, HasDefault
